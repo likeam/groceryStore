@@ -41,44 +41,25 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
 }
 
-var swiper = new Swiper(".product-slider", {
-    loop:true,
-    spaceBetween: 20,
-    autoplay: {
-        delay: 7500,
-        disableOnInteraction: false,
+const swiper = new swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
     },
-    centeredSlides: true,
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1020: {
-            slidesPerView: 3,
-        },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-});
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
 
-var swiper = new Swiper(".review-slider", {
-    loop:true,
-    spaceBetween: 20,
-    autoplay: {
-        delay: 7500,
-        disableOnInteraction: false,
-    },
-    centeredSlides: true,
-    breakpoints: {
-        0: {
-        slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1020: {
-            slidesPerView: 3,
-        },
-    },
-});

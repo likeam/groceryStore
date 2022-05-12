@@ -563,6 +563,11 @@ header .search-form label:hover{
 .footer .credit span{
     color:var(--orange);
 }
+/* 
+.swiper {
+    width: 600px;
+    height: 300px;
+  } */
 
 
  /* MEDIA QUERIES */
