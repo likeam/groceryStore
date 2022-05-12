@@ -321,7 +321,7 @@ header .search-form label:hover{
 .products .product-slider:first-child{
     margin-bottom: 2rem;
 }
-/* .products .product-slider .box{
+.products .product-slider .box{
     background: #fff;
     border-radius: .5rem;
     text-align: center;
@@ -330,7 +330,7 @@ header .search-form label:hover{
     outline: var(--outline);
     box-shadow: var(--box-shadow);
     transition: .2s linear;
-} */
+}
 
 .products .product-slider .box:hover{
     outline-offset: 0rem;
@@ -355,6 +355,7 @@ header .search-form label:hover{
 }
 
 /* CATEGORIES SECTION */
+
 .categories .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
