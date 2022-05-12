@@ -33,13 +33,15 @@ document.querySelector('#menu-btn').onclick = () =>{
     shoppingCart.classList.remove('active');
     loginForm.classList.remove('active');
 }
+
 window.onscroll = () =>{
     searchForm.classList.remove('active');
     shoppingCart.classList.remove('active');
     loginForm.classList.remove('active');
     navbar.classList.remove('active');
 }
-var swiper = new swiper(".product-slider", {
+
+var swiper = new Swiper(".product-slider", {
     loop:true,
     spaceBetween: 20,
     autoplay: {
@@ -60,7 +62,7 @@ var swiper = new swiper(".product-slider", {
     },
 });
 
-var swiper = new swiper(".review-slider", {
+var swiper = new Swiper(".review-slider", {
     loop:true,
     spaceBetween: 20,
     autoplay: {
@@ -70,7 +72,7 @@ var swiper = new swiper(".review-slider", {
     centeredSlides: true,
     breakpoints: {
         0: {
-            slidesPerView: 1,
+        slidesPerView: 1,
         },
         768: {
             slidesPerView: 2,
@@ -80,9 +82,3 @@ var swiper = new swiper(".review-slider", {
         },
     },
 });
-
-
-
-
-
-
