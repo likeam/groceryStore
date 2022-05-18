@@ -1,0 +1,101 @@
+.footer{
+    background: #fff;
+
+    & .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap:1.5rem;
+    
+        & .box h3{
+            font-size: 2.5rem;
+            color:var(--black);
+            padding:1rem 0;
+        
+            & h3 i{
+                color:var(--orange);
+            }
+            & .links{
+                display: block;
+                font-size: 1.5rem;
+                color:var(--light-color);
+                padding:1rem 0;
+            }
+            & .links i{
+                color:var(--orange);
+                padding-right: .5rem;
+            }
+            & .links:hover i{
+                padding-right: 2rem;
+            }
+            & p{
+                line-height: 1.8;
+                font-size: 1.5rem;
+                color:var(--light-color);
+                padding:1rem 0;
+            }
+            & .share a{
+                height:4rem;
+                width:4rem;
+                line-height:4rem;
+                border-radius: .5rem;
+                font-size: 2rem;
+                color:var(--black);
+                margin-right: .2rem;
+                background: #eee;
+                text-align: center;
+            }
+            & .share a:hover{
+                background: var(--orange);
+                color: #fff;
+            }
+            & .email{
+                width: 100%;
+                margin:.7rem 0;
+                padding:1rem;
+                border-radius: .5rem;
+                background: #eee;
+                font-size: 1.6rem;
+                color:var(--black);
+                text-transform: none;
+            }
+            & .payment-img{
+                margin-top: 2rem;
+                height: 3rem;
+                display: block;
+            }
+        }
+    }
+    & .credit{
+        text-align: center;
+        margin-top: 2rem;
+        padding:1rem;
+        padding-top: 2.5rem;
+        font-size: 2rem;
+        color:var(--black);
+        border-top: var(--border);
+    }
+    & .credit span{
+        color:var(--orange);
+    }
+}
+
+
+
+
+
+ /* MEDIA QUERIES */
+
+
+
+
+@media (max-width:450px){
+
+
+    .footer{
+        text-align: center;
+    }
+
+    .footer .box-container .box .payment-img{
+        margin: 2rem auto;
+    }
+}
